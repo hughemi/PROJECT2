@@ -1,45 +1,89 @@
-"","country","firstVaxPercent","secondVaxPercent"
-"1","Angola",5.41,2.9
-"2","Benin",1.23,0.17
-"3","Botswana",15.25,9.26
-"4","Burkina Faso",0.77,0.48
-"5","Cameroon",1.36,0.3
-"6","Cape Verde",49.35,19.31
-"7","Central African Rep.",2.09,0.2
-"8","Chad",0.58,0.15
-"9","Comoros",19.67,17.96
-"10","Congo",3.66,1.98
-"11","Democratic Republic of Congo",0.1,0.04
-"12","Eq. Guinea",14.51,11.02
-"13","Eswatini",17.11,16.49
-"14","Ethiopia",2.07,0.49
-"15","Gabon",4.4,3.12
-"16","Gambia",7.23,6.67
-"17","Ghana",2.73,2.39
-"18","Guinea",7.07,3.21
-"19","Guinea-Bissau",3.8,0.34
-"20","Kenya",4.51,1.56
-"21","Lesotho",11.54,11.06
-"22","Liberia",2.02,0.53
-"23","Madagascar",0.69,0.65
-"24","Malawi",3.81,2.41
-"25","Mali",1.48,0.41
-"26","Mauritania",6.52,0.45
-"27","Mauritius",66.17,61.51
-"28","Mozambique",5.8,4.86
-"29","Namibia",8.97,5.49
-"30","Niger",1.61,0.35
-"31","Nigeria",2.09,0.84
-"32","Rwanda",13.83,10.31
-"33","Sao Tome and Principe",23.03,6.31
-"34","Senegal",7,3.29
-"35","Seychelles",78.16,71.87
-"36","Sierra Leone",2.22,0.49
-"37","Somaliland",1.48,0.91
-"38","South Africa",19.28,13.18
-"39","Sudan",1.45,1.3
-"40","Tanzania",0.57,0.57
-"41","Togo",5.25,4.57
-"42","Uganda",2.19,0.78
-"43","Zambia",1.64,1.54
-"44","Zimbabwe",19.63,13.8
+"","country","name","value"
+"1","Angola","firstVaxPercent",5.41
+"2","Angola","secondVaxPercent",2.9
+"3","Benin","firstVaxPercent",1.23
+"4","Benin","secondVaxPercent",0.17
+"5","Botswana","firstVaxPercent",15.25
+"6","Botswana","secondVaxPercent",9.26
+"7","Burkina Faso","firstVaxPercent",0.77
+"8","Burkina Faso","secondVaxPercent",0.48
+"9","Cameroon","firstVaxPercent",1.36
+"10","Cameroon","secondVaxPercent",0.3
+"11","Cape Verde","firstVaxPercent",49.35
+"12","Cape Verde","secondVaxPercent",19.31
+"13","Central African Rep.","firstVaxPercent",2.09
+"14","Central African Rep.","secondVaxPercent",0.2
+"15","Chad","firstVaxPercent",0.58
+"16","Chad","secondVaxPercent",0.15
+"17","Comoros","firstVaxPercent",19.67
+"18","Comoros","secondVaxPercent",17.96
+"19","Congo","firstVaxPercent",3.66
+"20","Congo","secondVaxPercent",1.98
+"21","Democratic Republic of Congo","firstVaxPercent",0.1
+"22","Democratic Republic of Congo","secondVaxPercent",0.04
+"23","Eq. Guinea","firstVaxPercent",14.51
+"24","Eq. Guinea","secondVaxPercent",11.02
+"25","Eswatini","firstVaxPercent",17.11
+"26","Eswatini","secondVaxPercent",16.49
+"27","Ethiopia","firstVaxPercent",2.07
+"28","Ethiopia","secondVaxPercent",0.49
+"29","Gabon","firstVaxPercent",4.4
+"30","Gabon","secondVaxPercent",3.12
+"31","Gambia","firstVaxPercent",7.23
+"32","Gambia","secondVaxPercent",6.67
+"33","Ghana","firstVaxPercent",2.73
+"34","Ghana","secondVaxPercent",2.39
+"35","Guinea","firstVaxPercent",7.07
+"36","Guinea","secondVaxPercent",3.21
+"37","Guinea-Bissau","firstVaxPercent",3.8
+"38","Guinea-Bissau","secondVaxPercent",0.34
+"39","Kenya","firstVaxPercent",4.51
+"40","Kenya","secondVaxPercent",1.56
+"41","Lesotho","firstVaxPercent",11.54
+"42","Lesotho","secondVaxPercent",11.06
+"43","Liberia","firstVaxPercent",2.02
+"44","Liberia","secondVaxPercent",0.53
+"45","Madagascar","firstVaxPercent",0.69
+"46","Madagascar","secondVaxPercent",0.65
+"47","Malawi","firstVaxPercent",3.81
+"48","Malawi","secondVaxPercent",2.41
+"49","Mali","firstVaxPercent",1.48
+"50","Mali","secondVaxPercent",0.41
+"51","Mauritania","firstVaxPercent",6.52
+"52","Mauritania","secondVaxPercent",0.45
+"53","Mauritius","firstVaxPercent",66.17
+"54","Mauritius","secondVaxPercent",61.51
+"55","Mozambique","firstVaxPercent",5.8
+"56","Mozambique","secondVaxPercent",4.86
+"57","Namibia","firstVaxPercent",8.97
+"58","Namibia","secondVaxPercent",5.49
+"59","Niger","firstVaxPercent",1.61
+"60","Niger","secondVaxPercent",0.35
+"61","Nigeria","firstVaxPercent",2.09
+"62","Nigeria","secondVaxPercent",0.84
+"63","Rwanda","firstVaxPercent",13.83
+"64","Rwanda","secondVaxPercent",10.31
+"65","Sao Tome and Principe","firstVaxPercent",23.03
+"66","Sao Tome and Principe","secondVaxPercent",6.31
+"67","Senegal","firstVaxPercent",7
+"68","Senegal","secondVaxPercent",3.29
+"69","Seychelles","firstVaxPercent",78.16
+"70","Seychelles","secondVaxPercent",71.87
+"71","Sierra Leone","firstVaxPercent",2.22
+"72","Sierra Leone","secondVaxPercent",0.49
+"73","Somaliland","firstVaxPercent",1.48
+"74","Somaliland","secondVaxPercent",0.91
+"75","South Africa","firstVaxPercent",19.28
+"76","South Africa","secondVaxPercent",13.18
+"77","Sudan","firstVaxPercent",1.45
+"78","Sudan","secondVaxPercent",1.3
+"79","Tanzania","firstVaxPercent",0.57
+"80","Tanzania","secondVaxPercent",0.57
+"81","Togo","firstVaxPercent",5.25
+"82","Togo","secondVaxPercent",4.57
+"83","Uganda","firstVaxPercent",2.19
+"84","Uganda","secondVaxPercent",0.78
+"85","Zambia","firstVaxPercent",1.64
+"86","Zambia","secondVaxPercent",1.54
+"87","Zimbabwe","firstVaxPercent",19.63
+"88","Zimbabwe","secondVaxPercent",13.8
