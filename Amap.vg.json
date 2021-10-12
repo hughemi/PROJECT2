@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Percent of Population Double Vaccinated (as at Oct 6th 2021)",
+  "width": 650,
+  "height": 350,
+  "projection": {
+    "type": "equirectangular",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
+  "params": [
+    {
+      "name": "center_to",
+      "value": [6, 15],
+      "bind": {
+        "input": "select",
+        "options": [
+          [3, 25],
+          [-103.2, 44.1],
+          [-60.7, -18],
+          [23, 50.7],
+          [17.3, 5.4],
+          [97.2, 32],
+          [115, -10]
+        ],
+        "labels": ["Centre", "North America", "South America", "Europe", "Africa", "Asia", "Pacific"],
+        "name": "Map Centre: "
+      }
+    },
+    {
+      "name": "zoom_level",
+      "value": 115,
+      "bind": {
+        "input": "range",
+        "min": 115,
+        "max": 1500,
+        "step": 10,
+        "name": "Zoom: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/hughemi/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+  },
+  "transform": [{
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/doubleVaxPer100.csv"
+        },
+        "key": "country",
+        "fields": ["doubleVaxPer100"]
+      }
+    },
+    {"calculate": "datum.doubleVaxPer100 / 100", "as": "People fully Vaccinated per 100"}
+  ],
+  "mark": {
+    "type": "geoshape"
+    },
+  "encoding": {
+    "color": {
+      "field": "People fully Vaccinated per 100",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "People fully Vaccinated per 100", "type": "quantitative", "title": "Population double vaccinated (%)"}
+    ]
+  }
+
+}

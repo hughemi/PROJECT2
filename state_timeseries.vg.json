@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 650,
+  "height": 350,
+  "title": { "text": "Percent of State Population Double Vaccinated with Forecasts for the 80% Aim " },
+  "data": {
+      "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/states16plusvax.csv"
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": {"type": "point", "on": "mouseover"}
+    },
+    {"name": "select", "select": "point"}
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+        "field": "date",
+        "type": "temporal",
+        "scale": {"padding": 0.5},
+        "title": "Date [Daily Data]"
+      },
+    "y": {
+        "field": "Vaccination Percent",
+        "type": "quantitative",
+        "title": "Population double vaccinated (%)"
+      },
+    "opacity": {
+      "condition": {"param": "select", "value": 1},
+      "value": 0.3
+    },
+    "strokeOpacity": {
+      "condition": {"param": "highlight", "value": 1},
+      "value": 0.3
+    },
+    "color": {
+        "field": "State",
+        "scale": {
+            "domain": [
+            "NSW",
+            "ACT",
+            "TAS",
+            "VIC",
+            "SA",
+            "WA",
+            "NT",
+            "AUS"
+            ],
+            "range": [
+            "#e41a1c",
+            "#377eb8",
+            "#4daf4a",
+            "#984ea3",
+            "#ff7f00",
+            "#f781bf",
+            "#a65628",
+            "#000000"
+            ]
+        }
+    },
+    "strokeDash": {
+        "field": "Forecast"
+    },
+    "tooltip": [
+      {"field": "State", "type": "nominal", "title": "Region"},
+      {"field": "Vaccination Percent", "type": "quantitative", "title": "Population double vaccinated (%)"},
+      {"field": "date", "type": "temporal", "title": "Date"},
+      {"field": "Forecast", "type": "nominal", "title": "Forecasted?"}
+    ]
+  }
+}
