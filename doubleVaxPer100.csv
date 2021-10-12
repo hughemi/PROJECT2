@@ -9,7 +9,7 @@
 "8","Argentina",5191
 "9","Armenia",485
 "10","Aruba",7052
-"11","Australia",6245
+"11","Australia",5995.2
 "12","Austria",6057
 "13","Azerbaijan",3996
 "14","Bahamas",2522
@@ -24,7 +24,7 @@
 "23","Bhutan",6389
 "24","Bolivia",2929
 "25","Bonaire Sint Eustatius and Saba",6329
-"26","Bosnia and Herzegovina",1557
+"26","Bosnia and Herz. and Herzegovina",1557
 "27","Botswana",1024
 "28","Brazil",4610
 "29","British Virgin Islands",5049
@@ -36,7 +36,7 @@
 "35","Canada",7197
 "36","Cape Verde",2540
 "37","Cayman Islands",8351
-"38","Central African Republic",20
+"38","Central African Rep.",20
 "39","Chad",18
 "40","Chile",7398
 "41","China",7256
@@ -51,10 +51,10 @@
 "50","Curacao",5470
 "51","Cyprus",6251
 "52","Czechia",5595
-"53","Democratic Republic of Congo",4
+"53","Dem. Rep. Congo",4
 "54","Denmark",7541
 "55","Djibouti",260
-"56","Dominica",3020
+"56","Dominican Rep.",3020
 "57","Dominican Republic",4533
 "58","Ecuador",5545
 "59","Egypt",561
@@ -62,7 +62,7 @@
 "61","England",6690
 "62","Equatorial Guinea",1184
 "63","Estonia",4697
-"64","Eswatini",1795
+"64","eSwatini",1795
 "65","Ethiopia",77
 "66","Faeroe Islands",7484
 "67","Falkland Islands",5031
@@ -117,34 +117,34 @@
 "116","Lithuania",6077
 "117","Luxembourg",6294
 "118","Macao",4769
-"119","Madagascar",65
-"120","Malawi",256
-"121","Malaysia",6470
-"122","Maldives",6330
-"123","Mali",115
-"124","Malta",8171
-"125","Mauritania",1193
-"126","Mauritius",6407
-"127","Mexico",3698
-"128","Moldova",2013
-"129","Monaco",5898
-"130","Mongolia",6407
-"131","Montenegro",3544
-"132","Montserrat",2787
-"133","Morocco",5154
-"134","Mozambique",541
-"135","Myanmar",707
-"136","Namibia",757
-"137","Nauru",6669
-"138","Nepal",2173
-"139","Netherlands",6758
-"140","New Caledonia",3417
-"141","New Zealand",4568
-"142","Nicaragua",490
-"143","Niger",51
-"144","Nigeria",102
-"145","Niue",7125
-"146","North Macedonia",3579
+"119","Macedonia",3579
+"120","Madagascar",65
+"121","Malawi",256
+"122","Malaysia",6470
+"123","Maldives",6330
+"124","Mali",115
+"125","Malta",8171
+"126","Mauritania",1193
+"127","Mauritius",6407
+"128","Mexico",3698
+"129","Moldova",2013
+"130","Monaco",5898
+"131","Mongolia",6407
+"132","Montenegro",3544
+"133","Montserrat",2787
+"134","Morocco",5154
+"135","Mozambique",541
+"136","Myanmar",707
+"137","Namibia",757
+"138","Nauru",6669
+"139","Nepal",2173
+"140","Netherlands",6758
+"141","New Caledonia",3417
+"142","New Zealand",4568
+"143","Nicaragua",490
+"144","Niger",51
+"145","Nigeria",102
+"146","Niue",7125
 "147","Northern Cyprus",5838
 "148","Northern Ireland",6422
 "149","Norway",6745
@@ -163,28 +163,28 @@
 "162","Romania",2879
 "163","Russia",3080
 "164","Rwanda",1271
-"165","Saint Helena",5793
-"166","Saint Kitts and Nevis",4260
-"167","Saint Lucia",1938
-"168","Saint Vincent and the Grenadines",1218
-"169","Samoa",2879
-"170","San Marino",7186
-"171","Sao Tome and Principe",1173
-"172","Saudi Arabia",5575
-"173","Scotland",7062
-"174","Senegal",329
-"175","Serbia",4241
-"176","Seychelles",7187
-"177","Sierra Leone",54
-"178","Singapore",7802
-"179","Sint Maarten (Dutch part)",5486
-"180","Slovakia",4153
-"181","Slovenia",5015
-"182","Solomon Islands",361
-"183","Somalia",144
-"184","South Africa",1613
-"185","South Korea",5910
-"186","South Sudan",27
+"165","S. Sudan",27
+"166","Saint Helena",5793
+"167","Saint Kitts and Nevis",4260
+"168","Saint Lucia",1938
+"169","Saint Vincent and the Grenadines",1218
+"170","Samoa",2879
+"171","San Marino",7186
+"172","Sao Tome and Principe",1173
+"173","Saudi Arabia",5575
+"174","Scotland",7062
+"175","Senegal",329
+"176","Serbia",4241
+"177","Seychelles",7187
+"178","Sierra Leone",54
+"179","Singapore",7802
+"180","Sint Maarten (Dutch part)",5486
+"181","Slovakia",4153
+"182","Slovenia",5015
+"183","Solomon Islands",361
+"184","Somalia",144
+"185","South Africa",1613
+"186","South Korea",5910
 "187","Spain",7873
 "188","Sri Lanka",5701
 "189","Sudan",130
@@ -196,7 +196,7 @@
 "195","Tajikistan",1948
 "196","Tanzania",91
 "197","Thailand",3211
-"198","Timor",2183
+"198","Timor-Leste",2183
 "199","Togo",478
 "200","Tonga",2578
 "201","Trinidad and Tobago",3871
@@ -209,7 +209,7 @@
 "208","Ukraine",1407
 "209","United Arab Emirates",8434
 "210","United Kingdom",6617
-"211","United States",5567
+"211","United States of America",5567
 "212","Uruguay",7449
 "213","Uzbekistan",1456
 "214","Vanuatu",767
