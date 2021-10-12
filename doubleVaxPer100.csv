@@ -1,222 +1,222 @@
 "","country","doubleVaxPer100"
 "1","Afghanistan",108
-"2","Albania",2546
-"3","Algeria",936
-"4","Andorra",5408
-"5","Angola",290
-"6","Anguilla",5995
-"7","Antigua and Barbuda",3729
-"8","Argentina",4388
-"9","Armenia",436
-"10","Aruba",6903
-"11","Australia",3762
-"12","Austria",5922
-"13","Azerbaijan",3284
-"14","Bahamas",1661
-"15","Bahrain",6328
-"16","Bangladesh",897
-"17","Barbados",3392
-"18","Belarus",1541
-"19","Belgium",7152
-"20","Belize",2359
+"2","Albania",2885
+"3","Algeria",904
+"4","Andorra",6169
+"5","Angola",297
+"6","Anguilla",6054
+"7","Antigua and Barbuda",4444
+"8","Argentina",5191
+"9","Armenia",485
+"10","Aruba",7052
+"11","Australia",6245
+"12","Austria",6057
+"13","Azerbaijan",3996
+"14","Bahamas",2522
+"15","Bahrain",6451
+"16","Bangladesh",1068
+"17","Barbados",3816
+"18","Belarus",1724
+"19","Belgium",7265
+"20","Belize",3569
 "21","Benin",17
-"22","Bermuda",6868
-"23","Bhutan",6140
-"24","Bolivia",2571
+"22","Bermuda",6949
+"23","Bhutan",6389
+"24","Bolivia",2929
 "25","Bonaire Sint Eustatius and Saba",6329
-"26","Bosnia and Herz.",1306
-"27","Botswana",926
-"28","Brazil",3766
-"29","British Virgin Islands",4544
-"30","Brunei",3575
-"31","Bulgaria",1859
-"32","Burkina Faso",48
-"33","C<f4>te d'Ivoire",101
-"34","Cambodia",6080
-"35","Cameroon",30
-"36","Canada",6948
-"37","Cape Verde",1931
-"38","Cayman Islands",7585
-"39","Central African Rep.",20
-"40","Chad",15
-"41","Chile",7292
-"42","China",7078
-"43","Colombia",3148
-"44","Comoros",1796
-"45","Congo",198
-"46","Cook Islands",6283
-"47","Costa Rica",3361
-"48","Croatia",4094
-"49","Cuba",3983
-"50","Curacao",5361
-"51","Cyprus",6087
-"52","Czechia",5506
+"26","Bosnia and Herzegovina",1557
+"27","Botswana",1024
+"28","Brazil",4610
+"29","British Virgin Islands",5049
+"30","Brunei",4676
+"31","Bulgaria",1973
+"32","Burkina Faso",78
+"33","Cambodia",6571
+"34","Cameroon",31
+"35","Canada",7197
+"36","Cape Verde",2540
+"37","Cayman Islands",8351
+"38","Central African Republic",20
+"39","Chad",18
+"40","Chile",7398
+"41","China",7256
+"42","Colombia",3530
+"43","Comoros",1824
+"44","Congo",209
+"45","Cook Islands",6335
+"46","Costa Rica",4457
+"47","Cote d'Ivoire",101
+"48","Croatia",4251
+"49","Cuba",5098
+"50","Curacao",5470
+"51","Cyprus",6251
+"52","Czechia",5595
 "53","Democratic Republic of Congo",4
-"54","Denmark",7455
+"54","Denmark",7541
 "55","Djibouti",260
-"56","Dominica",2864
-"57","Dominican Rep.",4399
-"58","Ecuador",5464
-"59","Egypt",461
-"60","El Salvador",4980
-"61","England",6586
-"62","Eq. Guinea",1102
-"63","Estonia",4444
-"64","Eswatini",1649
-"65","Ethiopia",49
-"66","Faeroe Islands",7287
-"67","Falkland Is.s",5031
-"68","Fiji",3790
-"69","Finland",5897
-"70","France",6371
-"71","French Polynesia",4399
-"72","Gabon",312
-"73","Gambia",667
-"74","Georgia",1807
-"75","Germany",6269
-"76","Ghana",239
-"77","Gibraltar",11712
-"78","Greece",5746
-"79","Greenland",6304
-"80","Grenada",1843
-"81","Guatemala",1113
+"56","Dominica",3020
+"57","Dominican Republic",4533
+"58","Ecuador",5545
+"59","Egypt",561
+"60","El Salvador",5437
+"61","England",6690
+"62","Equatorial Guinea",1184
+"63","Estonia",4697
+"64","Eswatini",1795
+"65","Ethiopia",77
+"66","Faeroe Islands",7484
+"67","Falkland Islands",5031
+"68","Fiji",5122
+"69","Finland",6499
+"70","France",6650
+"71","French Polynesia",5022
+"72","Gabon",353
+"73","Gambia",692
+"74","Georgia",2172
+"75","Germany",6464
+"76","Ghana",258
+"77","Gibraltar",11779
+"78","Greece",6021
+"79","Greenland",6398
+"80","Grenada",2163
+"81","Guatemala",1517
 "82","Guernsey",2031
-"83","Guinea",321
-"84","Guinea-Bissau",34
-"85","Guyana",2236
-"86","Haiti",16
-"87","Honduras",1679
-"88","Hong Kong",5286
-"89","Hungary",5791
-"90","Iceland",7985
-"91","India",1476
-"92","Indonesia",1636
-"93","Iran",1642
-"94","Iraq",599
-"95","Ireland",7249
-"96","Isle of Man",7433
-"97","Israel",6360
-"98","Italy",6588
-"99","Jamaica",727
-"100","Japan",5462
-"101","Jersey",7295
-"102","Jordan",3102
-"103","Kazakhstan",3244
-"104","Kenya",156
-"105","Kiribati",569
-"106","Kosovo",2285
+"83","Guinea",446
+"84","Guinea-Bissau",37
+"85","Guyana",2760
+"86","Haiti",20
+"87","Honduras",2465
+"88","Hong Kong",5654
+"89","Hungary",5890
+"90","Iceland",8073
+"91","India",1893
+"92","Indonesia",2059
+"93","Iran",1840
+"94","Iraq",712
+"95","Ireland",7420
+"96","Isle of Man",7494
+"97","Israel",6462
+"98","Italy",6899
+"99","Jamaica",1018
+"100","Japan",6343
+"101","Jersey",7336
+"102","Jordan",3273
+"103","Kazakhstan",3614
+"104","Kenya",185
+"105","Kiribati",639
+"106","Kosovo",3430
 "107","Kuwait",2133
-"108","Kyrgyzstan",862
-"109","Laos",2587
-"110","Latvia",4329
-"111","Lebanon",1806
-"112","Lesotho",1106
-"113","Liberia",53
-"114","Libya",229
-"115","Liechtenstein",5690
-"116","Lithuania",6018
+"108","Kyrgyzstan",990
+"109","Laos",2819
+"110","Latvia",4753
+"111","Lebanon",2008
+"112","Lesotho",1465
+"113","Liberia",18
+"114","Libya",364
+"115","Liechtenstein",6011
+"116","Lithuania",6077
 "117","Luxembourg",6294
-"118","Macao",4606
+"118","Macao",4769
 "119","Madagascar",65
-"120","Malawi",241
-"121","Malaysia",5690
-"122","Maldives",6096
-"123","Mali",41
-"124","Malta",8128
-"125","Mauritania",45
-"126","Mauritius",6151
-"127","Mexico",3201
-"128","Moldova",1877
+"120","Malawi",256
+"121","Malaysia",6470
+"122","Maldives",6330
+"123","Mali",115
+"124","Malta",8171
+"125","Mauritania",1193
+"126","Mauritius",6407
+"127","Mexico",3698
+"128","Moldova",2013
 "129","Monaco",5898
-"130","Mongolia",6376
-"131","Montenegro",3243
-"132","Montserrat",2779
-"133","Morocco",4667
-"134","Mozambique",486
-"135","Myanmar",633
-"136","Namibia",549
+"130","Mongolia",6407
+"131","Montenegro",3544
+"132","Montserrat",2787
+"133","Morocco",5154
+"134","Mozambique",541
+"135","Myanmar",707
+"136","Namibia",757
 "137","Nauru",6669
-"138","Nepal",1880
-"139","Netherlands",6362
-"140","New Caledonia",2625
-"141","New Zealand",3383
-"142","Nicaragua",416
-"143","Niger",35
-"144","Nigeria",84
+"138","Nepal",2173
+"139","Netherlands",6758
+"140","New Caledonia",3417
+"141","New Zealand",4568
+"142","Nicaragua",490
+"143","Niger",51
+"144","Nigeria",102
 "145","Niue",7125
-"146","North Macedonia",3206
-"147","Northern Cyprus",3728
-"148","Northern Ireland",6335
-"149","Norway",6499
-"150","Oman",3496
-"151","Pakistan",1104
-"152","Palestine",1081
-"153","Panama",4931
-"154","Papua New Guinea",44
-"155","Paraguay",2563
-"156","Peru",2799
-"157","Philippines",1671
+"146","North Macedonia",3579
+"147","Northern Cyprus",5838
+"148","Northern Ireland",6422
+"149","Norway",6745
+"150","Oman",3926
+"151","Pakistan",1453
+"152","Palestine",2230
+"153","Panama",5270
+"154","Papua New Guinea",67
+"155","Paraguay",2768
+"156","Peru",3695
+"157","Philippines",2060
 "158","Pitcairn",10000
-"159","Poland",5092
-"160","Portugal",8182
+"159","Poland",5170
+"160","Portugal",8585
 "161","Qatar",7570
-"162","Romania",2748
-"163","Russia",2808
-"164","Rwanda",1031
-"165","S. Sudan",24
-"166","Saint Helena",5793
-"167","Saint Kitts and Nevis",4093
-"168","Saint Lucia",1581
-"169","Saint Vincent and the Grenadines",1159
-"170","Samoa",2275
-"171","San Marino",7153
-"172","Sao Tome and Principe",631
-"173","Saudi Arabia",5067
-"174","Scotland",6972
-"175","Senegal",329
-"176","Serbia",4205
-"177","Seychelles",7187
-"178","Sierra Leone",49
-"179","Singapore",7719
-"180","Sint Maarten (Dutch part)",5409
-"181","Slovakia",4082
-"182","Slovenia",4673
-"183","Solomon Is.",329
-"184","Somaliland",91
-"185","South Africa",1318
-"186","South Korea",4188
-"187","Spain",7703
-"188","Sri Lanka",5160
+"162","Romania",2879
+"163","Russia",3080
+"164","Rwanda",1271
+"165","Saint Helena",5793
+"166","Saint Kitts and Nevis",4260
+"167","Saint Lucia",1938
+"168","Saint Vincent and the Grenadines",1218
+"169","Samoa",2879
+"170","San Marino",7186
+"171","Sao Tome and Principe",1173
+"172","Saudi Arabia",5575
+"173","Scotland",7062
+"174","Senegal",329
+"175","Serbia",4241
+"176","Seychelles",7187
+"177","Sierra Leone",54
+"178","Singapore",7802
+"179","Sint Maarten (Dutch part)",5486
+"180","Slovakia",4153
+"181","Slovenia",5015
+"182","Solomon Islands",361
+"183","Somalia",144
+"184","South Africa",1613
+"185","South Korea",5910
+"186","South Sudan",27
+"187","Spain",7873
+"188","Sri Lanka",5701
 "189","Sudan",130
-"190","Suriname",2715
-"191","Sweden",6233
-"192","Switzerland",5294
-"193","Syria",136
-"194","Taiwan",662
-"195","Tajikistan",1605
-"196","Tanzania",57
-"197","Thailand",2161
-"198","Timor-Leste",1839
-"199","Togo",457
-"200","Tonga",2555
-"201","Trinidad and Tobago",3307
-"202","Tunisia",2689
-"203","Turkey",4972
-"204","Turkmenistan",16
+"190","Suriname",3016
+"191","Sweden",6615
+"192","Switzerland",5903
+"193","Syria",159
+"194","Taiwan",1750
+"195","Tajikistan",1948
+"196","Tanzania",91
+"197","Thailand",3211
+"198","Timor",2183
+"199","Togo",478
+"200","Tonga",2578
+"201","Trinidad and Tobago",3871
+"202","Tunisia",3345
+"203","Turkey",5427
+"204","Turkmenistan",32
 "205","Turks and Caicos Islands",6355
 "206","Tuvalu",3901
-"207","Uganda",78
-"208","Ukraine",1196
-"209","United Arab Emirates",8038
-"210","United Kingdom",6519
-"211","United States of America",5403
-"212","Uruguay",7345
-"213","Uzbekistan",986
-"214","Vanuatu",358
-"215","Venezuela",1488
-"216","Vietnam",664
-"217","Wales",6970
-"218","Wallis and Futuna",4462
-"219","Yemen",5
-"220","Zambia",154
-"221","Zimbabwe",1380
+"207","Uganda",88
+"208","Ukraine",1407
+"209","United Arab Emirates",8434
+"210","United Kingdom",6617
+"211","United States",5567
+"212","Uruguay",7449
+"213","Uzbekistan",1456
+"214","Vanuatu",767
+"215","Venezuela",2157
+"216","Vietnam",1451
+"217","Wales",7029
+"218","Wallis and Futuna",4655
+"219","Yemen",16
+"220","Zambia",242
+"221","Zimbabwe",1587
