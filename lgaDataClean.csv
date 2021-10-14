@@ -1,81 +1,81 @@
 "","LGA","VaxPercent"
-"1","Alpine ","70.4%"
-"2","Ararat ","64.1%"
-"3","Ballarat ","63.5%"
-"4","Banyule ","66.1%"
-"5","Bass Coast ","70.0%"
-"6","Baw Baw ","62.7%"
-"7","Bayside ","74.3%"
-"8","Benalla ","69.4%"
-"9","Boroondara ","68.9%"
-"10","Brimbank ","50.2%"
-"11","Buloke ","76.4%"
-"12","Campaspe ","67.6%"
-"13","Cardinia ","56.9%"
-"14","Casey ","54.2%"
-"15","Central Goldfields ","67.7%"
-"16","Colac-Otway ","63.9%"
-"17","Corangamite ","68.9%"
-"18","Darebin ","52.5%"
-"19","East Gippsland ","69.3%"
-"20","Frankston ","57.0%"
-"21","Gannawarra ","68.5%"
-"22","Glen Eira ","64.1%"
-"23","Glenelg ","66.5%"
-"24","Golden Plains ","61.4%"
-"25","Greater Bendigo ","65.0%"
-"26","Greater Dandenong ","48.0%"
-"27","Greater Geelong ","68.0%"
-"28","Greater Shepparton ","61.0%"
-"29","Hepburn ","69.3%"
-"30","Hindmarsh ","64.8%"
-"31","Hobsons Bay ","60.1%"
-"32","Horsham ","65.0%"
-"33","Hume ","48.4%"
-"34","Indigo ","68.8%"
-"35","Kingston ","62.0%"
-"36","Knox ","60.7%"
-"37","Latrobe ","55.3%"
-"38","Loddon ","66.2%"
-"39","Macedon Ranges ","74.3%"
-"40","Manningham ","63.6%"
-"41","Mansfield ","66.0%"
-"42","Maribyrnong ","55.8%"
-"43","Maroondah ","61.6%"
-"44","Melbourne ","45.7%"
-"45","Melton ","52.1%"
-"46","Mildura ","54.6%"
-"47","Mitchell ","57.2%"
-"48","Moira ","65.9%"
-"49","Monash ","57.7%"
-"50","Moonee Valley ","60.9%"
-"51","Moorabool ","62.2%"
-"52","Moreland ","53.9%"
-"53","Mornington Peninsula ","68.5%"
-"54","Mount Alexander ","70.4%"
-"55","Moyne ","70.2%"
-"56","Murrindindi ","62.6%"
-"57","Nillumbik ","70.7%"
-"58","Northern Grampians ","67.9%"
-"59","Port Phillip ","58.5%"
-"60","Pyrenees ","63.1%"
-"61","Queenscliffe ","92.5%"
-"62","South Gippsland ","66.2%"
-"63","Southern Grampians ","71.9%"
-"64","Stonnington ","61.3%"
-"65","Strathbogie ","70.0%"
-"66","Surf Coast ","78.7%"
-"67","Swan Hill ","67.0%"
-"68","Towong ","69.1%"
-"69","Wangaratta ","67.6%"
-"70","Warrnambool ","73.5%"
-"71","Wellington ","65.4%"
-"72","West Wimmera ","67.3%"
-"73","Whitehorse ","61.9%"
-"74","Whittlesea ","49.9%"
-"75","Wodonga ","63.1%"
-"76","Wyndham ","58.1%"
-"77","Yarra ","57.1%"
-"78","Yarra Ranges ","58.0%"
-"79","Yarriambiack ","71.8%"
-"80","Unincorporated Vic","26.2%"
+"1","Alpine ",70.4
+"2","Ararat ",64.1
+"3","Ballarat ",63.5
+"4","Banyule ",66.1
+"5","Bass Coast ",70
+"6","Baw Baw ",62.7
+"7","Bayside ",74.3
+"8","Benalla ",69.4
+"9","Boroondara ",68.9
+"10","Brimbank ",50.2
+"11","Buloke ",76.4
+"12","Campaspe ",67.6
+"13","Cardinia ",56.9
+"14","Casey ",54.2
+"15","Central Goldfields ",67.7
+"16","Colac-Otway ",63.9
+"17","Corangamite ",68.9
+"18","Darebin ",52.5
+"19","East Gippsland ",69.3
+"20","Frankston ",57
+"21","Gannawarra ",68.5
+"22","Glen Eira ",64.1
+"23","Glenelg ",66.5
+"24","Golden Plains ",61.4
+"25","Greater Bendigo ",65
+"26","Greater Dandenong ",48
+"27","Greater Geelong ",68
+"28","Greater Shepparton ",61
+"29","Hepburn ",69.3
+"30","Hindmarsh ",64.8
+"31","Hobsons Bay ",60.1
+"32","Horsham ",65
+"33","Hume ",48.4
+"34","Indigo ",68.8
+"35","Kingston ",62
+"36","Knox ",60.7
+"37","Latrobe ",55.3
+"38","Loddon ",66.2
+"39","Macedon Ranges ",74.3
+"40","Manningham ",63.6
+"41","Mansfield ",66
+"42","Maribyrnong ",55.8
+"43","Maroondah ",61.6
+"44","Melbourne ",45.7
+"45","Melton ",52.1
+"46","Mildura ",54.6
+"47","Mitchell ",57.2
+"48","Moira ",65.9
+"49","Monash ",57.7
+"50","Moonee Valley ",60.9
+"51","Moorabool ",62.2
+"52","Moreland ",53.9
+"53","Mornington Peninsula ",68.5
+"54","Mount Alexander ",70.4
+"55","Moyne ",70.2
+"56","Murrindindi ",62.6
+"57","Nillumbik ",70.7
+"58","Northern Grampians ",67.9
+"59","Port Phillip ",58.5
+"60","Pyrenees ",63.1
+"61","Queenscliffe ",92.5
+"62","South Gippsland ",66.2
+"63","Southern Grampians ",71.9
+"64","Stonnington ",61.3
+"65","Strathbogie ",70
+"66","Surf Coast ",78.7
+"67","Swan Hill ",67
+"68","Towong ",69.1
+"69","Wangaratta ",67.6
+"70","Warrnambool ",73.5
+"71","Wellington ",65.4
+"72","West Wimmera ",67.3
+"73","Whitehorse ",61.9
+"74","Whittlesea ",49.9
+"75","Wodonga ",63.1
+"76","Wyndham ",58.1
+"77","Yarra ",57.1
+"78","Yarra Ranges ",58
+"79","Yarriambiack ",71.8
+"80","Unincorporated Vic",26.2
