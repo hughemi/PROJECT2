@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 650,
+  "width": "container",
   "height": 350,
   "title": { "text": "Percent of State Population Double Vaccinated with Forecasts for the 80% Aim " },
   "data": {

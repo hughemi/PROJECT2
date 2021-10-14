@@ -1,8 +1,16 @@
 h2 {
     font-family: 'Roboto';
     padding-left: 50px;
+    padding-right: 50px;
 }
-
+body {
+    background-color: darkgray;
+}
+#thepage{
+    width: 60%;
+    background-color: white;
+    margin: auto;
+}
 p {
     font-family: 'Roboto';
     padding-left: 50px;
@@ -11,18 +19,31 @@ p {
 
 h1 {
     font-family: 'Roboto';
-    padding-left: 90px;
-	padding-right: 90px;
+    padding-left: 50px;
+	padding-right: 50px;
 }
 
 #choroplethMap {
 	top:15px;
 	bottom: 50px;
 	width: 100%;
-	/*height: 1000px;
-	width: 800px;*/
 }
-
+#timeSeries {
+    top:15px;
+    margin-right: 150px;
+	bottom: 50px;
+}
+#subregionAfrica {
+    top:15px;
+	bottom: 50px;
+	width: 100%;
+}
+#stateTS {
+    top:15px;
+    padding-bottom: 5%;
+	width: 100%;
+    height: 100%;
+}
 .vis-container {
 	width: 100%;
 	height: 100%;
