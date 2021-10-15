@@ -31,86 +31,9 @@
         </div>
 
         <div class="pure-g">
-            <div class="pure-u-1-3">
-                <h2>A birds-eye view of COVID-19 double vaccination vates across the globe</h2>
-                <p>Here we see a choropleth map of double COVID-19 vaccination rates for most countries.
-                    <br><br> It seems that the higher income countries have better rates which is intuitive since they would 
-                    have more access to vaccinations.
-                    Africa is clearly struggling and may be continent the holds the world back from fully opening borders?
-                </p>
-            </div>
-
-            <div class="pure-u-2-3">
-                <div id="choroplethMap" class="vis-container"></div>
-            </div>
-        </div>
-
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <br><br>
-                <hr class="break1">
-            </div>
-        </div>
-
-        <div class="pure-g">
-            <div class="pure-u-1-3">
-                <h2>Well are vacciantions rates at least increasing across the world?</h2>
-                <p>This chart is overwhelming and largely uninterpretable without any filters applied to it. 
-                    <br><br> Therefore, I would suggest to play with the 'Region' attribute through either clicking on 
-                    the legend, or using the 'Region Selection'.
-                    <br><br> The population filter allows you to look at larger population countries if you wish.
-                    <br><br> Whilst the 'Rank filter' may be the most interesting. Move the slider and see what you think it means.
-                    A countries 'Rank' was determined by ranking each countries most recent Double Vaccination %.
-                    <br><br> The country that ranks 1st and dominates the rest of the world is Gibraltar,
-                    and no their data is not lying, they really do have a vaccination rate of 117%.
-                    This is because Gibraltar is a tiny country situated next to Spain, so many Spaniards got vaccinated in Gibraltar and boosted their numbers!
-                    <br><br> On another note, Africa is clearly struggling with vaccinations rates less than 1% in some countries.
-                </p>
-            </div>
-
-            <div class="pure-u-2-3">
-                <div id="timeSeries" class="vis-container"></div>
-            </div>
-        </div>
-
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <br><br>
-                <hr class="break1">
-            </div>
-        </div>
-
-        <div class="pure-g">
-            <div class="pure-u-1-3">
-                <h2>How badly are regions of Africa failing to get their population vaccinated?</h2>
-                <p>Highlighted in blue is Sub-Saharan Africa, which has the worse vaccination rates of any Region
-                    <br><br> Sub-Saharan Africa is broken down into multiple subregions, as defined by the UN, with
-                    Northern Africa currently being the subregion with the worse average double vaccination rates.
-                    <br><br>However, what is interesting to note is that there are two bars for 'Northern Africa'.
-                    The difference is that the parts of Northern Africa that lie in the region of Middle East
-                    & North Africa, have much greater rates. The 3 countries that fit this criteria are Egypt, Morocco and Tunisia
-                    who unsurprisingly have the 2nd, 5th and 13th greatest GDP in Africa, respectively.
-                    <br><br> This suggests that a greater GDP is correlated with greater vaccination rates, but this would
-                    have to be explored further.
-                    </p>
-            </div>
-
-            <div class="pure-u-2-3">
-                <div id="subregionAfrica" class="vis-container"></div>
-            </div>
-        </div>
-
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <br><br>
-                <hr class="break1">
-            </div>
-        </div>
-        
-        <div class="pure-g">
-            <div class="pure-u-1-3">
-                <h2>A refocus onto Australia and how close we are to the 80%, freedom, vaccination rate!</h2>
-                <p>Unlike many countries in Sub-Saharan Africa whose outlook looks concerning and needs additional help, the
+            <div class="pure-u-1-2">
+                <h2>Australia, and the success they are having in reaching 80% double vaccination rates by the end of 2021</h2>
+                <p id="paraFirst">Unlike many countries in Sub-Saharan Africa whose outlook looks concerning and needs additional help, the
                     outlook is quite the opposite in Australia. 
                     <br><br>Where 80% of a states 16+ y.o population is double vaccinated, freedoms such as international travel
                     and loosening of restrictions will be implemented. All states are on track to reach this figure by the end of 2021.
@@ -119,34 +42,148 @@
                 </p>
             </div>
 
-            <div class="pure-u-2-3">
-                <div id="stateTS" class="vis-container"></div>
+            <div class="pure-u-1-2">
+                <div id="ausMap" class="vis-container"></div>
             </div>
         </div>
-    </div>
+
+        <div class="pure-g">
+            <div class="pure-u-5-24">
+                <h3 id="paraLeftPad">How long until each state reaches 80% rates</h2>
+                <p id="paraLeftPad">Currently Australia has roughly 62% double vaccination rates.
+                    <br><br>The dashed lines are basic trend forecasts that serve as a guideline, and should not be taken seriously.
+                    <br><br>However, Australia and all of its states should reach 80% rates by December.
+                    <br><br> add tick for current month on both
+                </p>
+            </div>
+
+            <div class="pure-u-7-24">
+                <div id="stateTS" class="vis-container"></div>
+            </div>
+
+            <div class="pure-u-5-24">
+                <h3>A timeline of Australia's vaccine supply</h2>
+                <p id="paraRollout"> Australia are contracted to receive 250 million doses by mid 2023.
+                    <br><br> However, only 75M of those 250M are required to vaccinate the whole population,
+                    & 100M will be supplied to the Pacific & Southeast Asia.
+                    <br><br> This leaves Australia with an excess of 75M doses.
+                    Should Australia look to donate some vaccines to other regions of need? 
+                </p>
+            </div>
+
+            <div class="pure-u-7-24">
+                <div id="ausVaxRollout" class="vis-container"></div>
+            </div>            
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <br><br>
+                <hr class="break1">
+            </div>
+        </div>        
+
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <h2 id="rightPad1" >What continents and countries are struggling to get their population vaccinated?</h2>
+                <p id="rightPad2" >Africa as a continent has a double vaccination rate of less than 4%, 
+                    with some countries less than 1%, such as Cameroon, Chad, Ethiopia etc.
+                    <br><br>Due to most African countries being low-income and not having access to vaccines, 
+                    could they hold the world back from finally eliminating COVID and opening all borders?
+                    <br><br>It is a real question that should be asked to all high-income, highly vaccinated countries.
+                    Australia is already sending millions of vaccines to the Pacific and Southeast Asia which is great, but with our
+                    extreme surplus of vaccines evidenced in previous graphs, should Australia look at assisting African countries as well?
+
+                </p>
+            </div>
+
+            <div class="pure-u-1-2">
+                <div id="choroplethMap" class="vis-container"></div>
+            </div>
+        </div>
+
+     
+
+        <div class="pure-g">
+            <div class="pure-u-5-24">
+                <h3 id="paraLeftPad">Well are vacciantions rates at least increasing in Africa?</h3>
+                <p id="paraLeftPad"> Compared to the rest of the world, Africa's vaccinations are slowly increasing.
+                    Only Seychelles and Mauritius have rates over 25%.
+                    <br><br>To understand how Africa & other regions are going, play with the filters.
+                    The 'Rank Filter' ranks all countries double vaccination %, where 1 = the best in the world.
+                    <br><br> Let's hope Australia will be able to reach 85%+ double vaccinated quickly and then
+                    assist Africa in reaching this major milestone!
+                </p>
+            </div>
+
+            <div class="pure-u-7-24">
+                <div id="timeSeries" class="vis-container"></div>
+            </div>
+
+            <div class="pure-u-5-24">
+                <h3>The five African subregions have the five worse vaccination rates</h2>
+                <p id="paraRollout">This chart confirms that Sub-Saharan Africa and each of it's 5 subregions
+                    have the worse rates in the world.
+                    <br><br>Southeast Asia who has the 7th worse rates are already receiving 100M doses from Australia.
+                    <br><br>So why is Australia failing to ship any doses to Africa? They are struggling more than Asia,
+                    all countries need to be vaccinated to open global borders, and don't vaccinated, high-income
+                    countries have a moral obligation to help the world were they can?
+            </div>
+
+            <div class="pure-u-7-24">
+                <div id="subregionAfrica" class="vis-container"></div>
+            </div>
+
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <br><br>
+                <hr class="break1">
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <p id="paraLeftPad">Source 1:
+                    <br><br>Source 2:
+
+                </p>
+            </div>
+        </div>
 
     <script type="text/javascript">
 
         var specVis1 = "Amap.vg.json";
-        vegaEmbed("#choroplethMap", specVis1).then(function(result) {
+        vegaEmbed("#choroplethMap", specVis1, {"actions": false}).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
         var specVis2 = "timeSeries.vg.json";
-        vegaEmbed("#timeSeries", specVis2).then(function(result) {
+        vegaEmbed("#timeSeries", specVis2, {"actions": false}).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
     
         var specVis3 = "subregionAfricaHighlight.vg.json";
-        vegaEmbed("#subregionAfrica", specVis3).then(function(result) {
+        vegaEmbed("#subregionAfrica", specVis3, {"actions": false}).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
         var specVis4 = "state_timeseries.vg.json";
-        vegaEmbed("#stateTS", specVis4).then(function(result) {
+        vegaEmbed("#stateTS", specVis4, {"actions": false}).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
-    
+
+        var specVis5 = "vaccineRollout.vg.json";
+        vegaEmbed("#ausVaxRollout", specVis5, {"actions": false}).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var specVis6 = "ausMap.vg.json";
+        vegaEmbed("#ausMap", specVis6, {"actions": false}).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
     </script>
     
 </body>

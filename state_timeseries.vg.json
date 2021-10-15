@@ -1,25 +1,26 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
-  "height": 350,
-  "title": { "text": "Percent of State Population Double Vaccinated with Forecasts for the 80% Aim " },
+  "width": 305,
+  "height": 218,
+  "title": { "text": "Pop. Double Vaccinated (%) per State in 2021" },
   "data": {
       "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/states16plusvax.csv"
   },
   "params": [
     {
       "name": "highlight",
-      "select": {"type": "point", "on": "mouseover"}
+      "select": {"type": "point", "on": "mouseover", "fields":["State"]}
     },
-    {"name": "select", "select": "point"}
-  ],
+    {"name": "select", "select": {"type": "point", "fields":["State"]}, "bind": "legend"}
+    ],
   "mark": "line",
   "encoding": {
     "x": {
         "field": "date",
         "type": "temporal",
         "scale": {"padding": 0.5},
-        "title": "Date [Daily Data]"
+        "title": "Date",
+        "axis": {"grid": false}
       },
     "y": {
         "field": "Vaccination Percent",
@@ -28,11 +29,11 @@
       },
     "opacity": {
       "condition": {"param": "select", "value": 1},
-      "value": 0.3
+      "value": 0.1
     },
     "strokeOpacity": {
       "condition": {"param": "highlight", "value": 1},
-      "value": 0.3
+      "value": 0.1
     },
     "color": {
         "field": "State",
@@ -57,14 +58,28 @@
             "#a65628",
             "#000000"
             ]
-        }
+        },
+        "legend": {
+          "orient": "none",
+          "legendX": 255,
+          "legendY": 63,
+          "fillColor": "white",
+          "padding": 5
+        } 
     },
     "strokeDash": {
-        "field": "Forecast"
+        "field": "Forecast",
+        "legend": {
+          "orient": "none",
+          "legendX": 200,
+          "legendY": 141,
+          "fillColor": "white",
+          "padding": 5
+        } 
     },
     "tooltip": [
       {"field": "State", "type": "nominal", "title": "Region"},
-      {"field": "Vaccination Percent", "type": "quantitative", "title": "Population double vaccinated (%)"},
+      {"field": "Vaccination Percent", "type": "quantitative", "title": "Pop. double vaccinated (%)", "format": ".1f"},
       {"field": "date", "type": "temporal", "title": "Date"},
       {"field": "Forecast", "type": "nominal", "title": "Forecasted?"}
     ]

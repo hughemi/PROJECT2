@@ -1,22 +1,27 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container",
-    "height": 400,
-    "title": { "text": "Percent of Population Double Vaccinated (for 2021 so far)" },
+    "width": 306,
+    "height": 228,
+    "title": { "text": "Pop. Double Vaccinated (%) per country in 2021" },
     "data": {
         "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/vax_timeseries.csv"
     },        
     "params": [
         {
             "name": "rank",
-            "value": 217,
+            "value": 185,
             "bind": {
                 "input": "range",
                 "min": 1,
-                "max": 217,
+                "max": 185,
                 "step": 1,
                 "name": "Rank Filter"
             }
+        },
+        {
+            "name": "Region_highlight",
+            "select": {"type": "point", "fields":["region"]}, "bind": "legend",
+            "value": "Sub-Saharan Africa"
         },
         {
             "name": "Region_selection",
@@ -46,7 +51,7 @@
             }
         }
     ],
-    "transform": [
+    "transform": [        
         {"filter": "datum.rank <= rank"},
         {"filter": "Region_selection == null || datum.region == Region_selection"}
     ],
@@ -55,13 +60,15 @@
             "field": "date", 
             "type": "temporal",
             "scale": {"domain": ["1/1/2021", "10/06/2021"]},
-            "title": "Date [Daily Data]"
+            "title": "Date",
+            "axis": {"grid": false}
         },
         "y": {
             "field": "people_fully_vaccinated_per_hundred",
             "type": "quantitative",
-            "scale": {"domain": [0, 120]},
-            "title": "Population double vaccinated (%)"
+            "scale": {"domain": [0, 90]},
+            "title": "Population double vaccinated (%)",
+            "axis": {"grid": false}
         },
         "detail": {
                 "field": "country", 
@@ -70,13 +77,7 @@
     },
     "layer": [
         {
-            "selection": {
-                "Region_highlight":{
-                    "type": "multi",
-                    "fields": ["region"],
-                    "bind": "legend"
-                }
-            },
+
             "mark": {
                 "type": "line",
                 "opacity": 0.5
@@ -85,6 +86,7 @@
                 "color": {
                         "field": "region", 
                         "type": "nominal",
+                        "title": "Region",
                         "scale": {
                             "domain": [
                             "East Asia & Pacific",
@@ -97,27 +99,31 @@
                             ],
                             "range": [
                             "#66c2a5",
-                            "#fc8d62",
+                            "#8da0cb",
                             "#e5c494",
                             "#e78ac3",
                             "#a6d854",
                             "#ffd92f",
-                            "#8da0cb"
+                            "#fc8d62"
                             ]
+                        },
+                        "legend": {
+                            "orient": "none",
+                            "legendX": 5,
+                            "legendY": 5
                         }
                 },
                 "opacity": {
-                    "condition": {"selection": "Region_highlight", "value": 0.6},
-                    "value": 0.1
+                    "condition": {"param": "Region_highlight", "value": 0.6},
+                    "value": 0.05
                 },
                 "tooltip": [
-                    {"field": "country", "type": "nominal"},
-                    {"field": "date", "type": "temporal"},
+                    {"field": "country", "type": "nominal", "title": "Country"},
+                    {"field": "date", "type": "temporal", "title": "Date"},
                     {"field": "people_fully_vaccinated_per_hundred", "type": "quantitative",
-                        "format": ",", "name": "Population double vax %"},
-                    {"field": "region", "type": "nominal"},
-                    {"field": "rank", "type": "quantitative", "format": ","},
-                    {"field": "population", "type": "quantitative"}
+                        "format": ".1f", "title": "Pop. double vaccinated (%)"},
+                    {"field": "region", "type": "nominal", "title": "Region"},
+                    {"field": "rank", "type": "quantitative", "format": ",", "title": "Rank"}
                 ]
             }  
         }

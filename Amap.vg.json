@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Percent of Population Double Vaccinated (as at Oct 6th 2021)",
-  "width": "container",
-  "height": "container",
+  "title": "Population Double Vaccinated (%) Global Map (as at Oct 10th 2021)",
+  "width": 670,
+  "config": {"view": {"strokeWidth":0}},
+  "height": 280,
   "projection": {
     "type": "equirectangular",
     "center": {"expr": "center_to"},
@@ -16,27 +17,25 @@
         "input": "select",
         "options": [
           [3, 25],
-          [-103.2, 44.1],
+          [-103.2, 38],
           [-60.7, -18],
           [23, 50.7],
           [17.3, 5.4],
           [97.2, 32],
-          [115, -10],
-          [134, -27.2],
-          [144.63, -36.7],
-          [144.96, -37.82]
+          [115, 0],
+          [134, -27.2]
         ],
-        "labels": ["Centre", "North America", "South America", "Europe", "Africa", "Asia", "Pacific", "Australia", "Victoria", "Melbourne"],
+        "labels": ["Centre", "North America", "South America", "Europe", "Africa", "Asia", "Pacific", "Australia"],
         "name": "Map Centre: "
       }
     },
     {
       "name": "zoom_level",
-      "value": 90,
+      "value": 105,
       "bind": {
         "input": "range",
-        "min": 90,
-        "max": 10000,
+        "min": 105,
+        "max": 1000,
         "step": 10,
         "name": "Zoom: "
       }
@@ -61,19 +60,20 @@
             "fields": ["doubleVaxPer100"]
           }
         },
-        {"calculate": "datum.doubleVaxPer100 / 100", "as": "People fully Vaccinated per 100"}
+        {"calculate": "datum.doubleVaxPer100 / 100", "as": "Population double vaccinated (%)"}
       ],
       "mark": {
         "type": "geoshape", "stroke": "white", "strokeWidth": 0.3
         },
       "encoding": {
         "color": {
-          "field": "People fully Vaccinated per 100",
-          "type": "quantitative"
+          "field": "Population double vaccinated (%)",
+          "type": "quantitative",
+          "title": "Vaccinated (%)"
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "People fully Vaccinated per 100", "type": "quantitative", "title": "Population double vaccinated (%)"}
+          {"field": "Population double vaccinated (%)", "type": "quantitative", "title": "Pop. double vaccinated (%)", "format": ".1f"}
         ]
       }
     },
@@ -94,7 +94,17 @@
       ],
       "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1.1},
       "encoding": {
-        "color": {"field": "VaxPercent","type": "quantitative"},
+        "color": {
+          "field": "VaxPercent","type": "quantitative",
+          "legend": {
+            "orient": "none",
+            "legendX": 0,
+            "legendY": 120,
+            "tickCount": 6,
+            "gradientLength": 132,
+            "padding": 5
+          } 
+        },
         "tooltip": [
           {"field": "properties.name", "type": "nominal", "title": "State"},
           {"field": "VaxPercent", "type": "quantitative", "title": "Population double vaccinated (%)"}
@@ -103,26 +113,21 @@
     },
     {
       "data": {
-      "url": "https://raw.githubusercontent.com/blademaw/fit3179-a2/main/data/vic_lga.json",
-      "format": {"type": "topojson", "feature": "vic_lga"}
-      },
-      "transform": [
-      {
-        "lookup": "properties.ABB_NAME",
-        "from": {
-          "data": {"url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/lgaDataClean.csv"},
-          "key": "LGA",
-          "fields": ["VaxPercent"]
-        }
-      }],
-      "mark": {"type": "geoshape", "stroke": "white"},
-      "encoding": {
-        "color": {"field": "VaxPercent","type": "quantitative"},
-        "tooltip": [
-          {"field": "properties.ABB_NAME", "type": "nominal", "title": "LGA"},
-          {"field": "VaxPercent", "type": "quantitative", "title": "Population double vaccinated (%)"}
+        "values": [
+          {"lon": 17, "lat": -47, "writing": "Less than 4% of Africa"},
+          {"lon": 17, "lat": -55, "writing": "is double vaccinated"}
         ]
-      }
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"}
+      },
+      "layer": [
+        {
+          "mark": {"type": "text", "dy": -10},
+          "encoding": {"text": {"field": "writing", "type": "nominal"}}
+        }
+      ]
     }
   ]
 }
