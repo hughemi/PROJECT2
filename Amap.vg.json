@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Population Double Vaccinated (%) Global Map (as at Oct 10th 2021)",
   "width": 670,
-  "config": {"view": {"strokeWidth":0}},
+  "config": {"view": {"strokeWidth":0},"font": "Open Sans"},
   "height": 280,
   "projection": {
     "type": "equirectangular",

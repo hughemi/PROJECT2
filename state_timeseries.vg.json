@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 305,
-  "height": 218,
+  "height": 221,
+  "config": {"font": "Open Sans"},
   "title": { "text": "Pop. Double Vaccinated (%) per State in 2021" },
   "data": {
       "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/states16plusvax.csv"
@@ -20,7 +21,7 @@
         "type": "temporal",
         "scale": {"padding": 0.5},
         "title": "Date",
-        "axis": {"grid": false}
+        "axis": {"grid": false, "format": "%b %Y"}
       },
     "y": {
         "field": "Vaccination Percent",
@@ -49,11 +50,11 @@
             "AUS"
             ],
             "range": [
-            "#e41a1c",
+            "#fc8d62",
             "#377eb8",
             "#4daf4a",
             "#984ea3",
-            "#ff7f00",
+            "#a6d854",
             "#f781bf",
             "#a65628",
             "#000000"

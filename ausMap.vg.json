@@ -3,7 +3,7 @@
     "title": "Population Double Vaccinated (%) - (as at Oct 10th 2021)",
     "width": 570,
     "height": 300,
-    "config": {"view": {"strokeWidth":0}},
+    "config": {"view": {"strokeWidth":0}, "font": "Open Sans"},
     "projection": {
       "type": "equirectangular",
       "center": {"expr": "center_to"},

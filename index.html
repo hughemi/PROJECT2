@@ -10,10 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-    <title>Double Covid-19 Vaccination rates across the world</title>
+    <title>COVID-19 Vaccination Rates</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
@@ -26,18 +26,39 @@
 
         <div class="pure-g">
             <div class="pure-u-1-1">
-                <h1>Global COVID-19 Double Vaccination Rates Around the Globe and Australia</h1>
+                <h1>COVID-19 <span class='vaxColour'>Vaccination  Rates </span> in Australia and How We Can Help Other Regions
+                </h1>
             </div>
         </div>
 
         <div class="pure-g">
             <div class="pure-u-1-2">
-                <h2>Australia, and the success they are having in reaching 80% double vaccination rates by the end of 2021</h2>
-                <p id="paraFirst">Unlike many countries in Sub-Saharan Africa whose outlook looks concerning and needs additional help, the
+                <p id="paraFirst">This page presents the success Australia are having with <span class='vaxColour'>double vaccinating</span> the population,
+                    then highlights the vaccine surplus Australia will have by 2023, and finally identifies the regions
+                    who will benefit most from our surplus of vaccines.
+                    <br><br>All data and references to 'vaccination rates' thoughout this page refer to <span class='vaxColour'>double vaccination rates</span> of a population against COVID-19.
+                    <br><br>You are also encouraged to interact with all of the graphs, especially the legends.
+                </p>
+            </div>
+            <div class="pure-u-1-2">
+                <img src="2vaxIcon.png" alt="Vaccine Icon" style="width:670px; height:153px; padding-top: 9px;">
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <br><br>
+            </div>
+        </div>  
+
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <h2>Australia, and the success they are having in reaching <span class='vaxColour'>80% double vaccination rates</span> by the end of 2021</h2>
+                <p id="paraFirst">Unlike many countries in <span class='africaColour'>Sub-Saharan Africa</span> whose outlook looks concerning and needs additional help, the
                     outlook is quite the opposite in Australia. 
-                    <br><br>Where 80% of a states 16+ y.o population is double vaccinated, freedoms such as international travel
+                    <br><br>Where 80% of a state's 16+ y.o population is <span class='vaxColour'>double vaccinated</span>, freedoms such as international travel
                     and loosening of restrictions will be implemented. All states are on track to reach this figure by the end of 2021.
-                    <br><br>The predictions in the dashed line are simple trend generates forecasts that will not be extremely accurate.
+                    <br><br>The predictions in the dashed lines below are simple trend generated forecasts that will not be extremely accurate.
                     However, their purpose is serve as a rough guideline of when each state can expect to reach the 80% milestone.
                 </p>
             </div>
@@ -49,11 +70,10 @@
 
         <div class="pure-g">
             <div class="pure-u-5-24">
-                <h3 id="paraLeftPad">How long until each state reaches 80% rates</h2>
-                <p id="paraLeftPad">Currently Australia has roughly 62% double vaccination rates.
+                <h3 id="paraLeftPad">How long until each state reaches<span class='vaxColour'> 80% vaccinated</span></h3>
+                <p id="paraLeftPad">Currently Australia's <span class='vaxColour'>double vaccination rates</span> is roughly 62%.
                     <br><br>The dashed lines are basic trend forecasts that serve as a guideline, and should not be taken seriously.
-                    <br><br>However, Australia and all of its states should reach 80% rates by December.
-                    <br><br> add tick for current month on both
+                    <br><br>However, Australia and its states should all reach <span class='vaxColour'>80% vaccination rates</span> by December 2021.
                 </p>
             </div>
 
@@ -62,12 +82,11 @@
             </div>
 
             <div class="pure-u-5-24">
-                <h3>A timeline of Australia's vaccine supply</h2>
-                <p id="paraRollout"> Australia are contracted to receive 250 million doses by mid 2023.
-                    <br><br> However, only 75M of those 250M are required to vaccinate the whole population,
-                    & 100M will be supplied to the Pacific & Southeast Asia.
+                <h3 style="padding-right: 20px;">A timeline of Australia's vaccine supply</h3>
+                <p id="paraRollout"> Australia are contracted to receive 250 million doses by mid 2023, however, only 75M are required to triple <span class='vaxColour'>vaccinate</span> the  population.
+                    And 100M will be supplied to SE Asia & Pacific.
                     <br><br> This leaves Australia with an excess of 75M doses.
-                    Should Australia look to donate some vaccines to other regions of need? 
+                    Should Australia donate these doses to regions of need, maybe <span class='africaColour'>Africa?</span> 
                 </p>
             </div>
 
@@ -76,23 +95,20 @@
             </div>            
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g" style="padding-top: 15px; padding-bottom: 15px;">
             <div class="pure-u-1">
-                <br><br>
                 <hr class="break1">
             </div>
         </div>        
 
         <div class="pure-g">
             <div class="pure-u-1-2">
-                <h2 id="rightPad1" >What continents and countries are struggling to get their population vaccinated?</h2>
-                <p id="rightPad2" >Africa as a continent has a double vaccination rate of less than 4%, 
-                    with some countries less than 1%, such as Cameroon, Chad, Ethiopia etc.
-                    <br><br>Due to most African countries being low-income and not having access to vaccines, 
-                    could they hold the world back from finally eliminating COVID and opening all borders?
-                    <br><br>It is a real question that should be asked to all high-income, highly vaccinated countries.
-                    Australia is already sending millions of vaccines to the Pacific and Southeast Asia which is great, but with our
-                    extreme surplus of vaccines evidenced in previous graphs, should Australia look at assisting African countries as well?
+                <h2 id="rightPad1" >Which continents and countries are struggling to get their population <span class='vaxColour'>vaccinated?</span></h2>
+                <p id="rightPad2" >As a continent, <span class='africaColour'>Africa</span> has a <span class='vaxColour'>4% double vaccination rate</span>.
+                    Could the <span class='africaColour'>African</span> region hold the world back from eliminating COVID and opening all borders?
+                    <br><br>It is a question that should be asked to all high-income, <span class='vaxColour'>high-vaccinated countries.</span>
+                    Australia is already sending millions of vaccines to the Pacific and Southeast Asia which, but with our
+                    extreme surplus of vaccines evidenced in previous graphs, should Australia look at assisting <span class='africaColour'>African</span> countries as well?
 
                 </p>
             </div>
@@ -106,13 +122,12 @@
 
         <div class="pure-g">
             <div class="pure-u-5-24">
-                <h3 id="paraLeftPad">Well are vacciantions rates at least increasing in Africa?</h3>
-                <p id="paraLeftPad"> Compared to the rest of the world, Africa's vaccinations are slowly increasing.
-                    Only Seychelles and Mauritius have rates over 25%.
-                    <br><br>To understand how Africa & other regions are going, play with the filters.
-                    The 'Rank Filter' ranks all countries double vaccination %, where 1 = the best in the world.
-                    <br><br> Let's hope Australia will be able to reach 85%+ double vaccinated quickly and then
-                    assist Africa in reaching this major milestone!
+                <h3 id="paraLeftPad">Well are <span class='vaxColour'>vacciantions rates</span> at least increasing in <span class='africaColour'>Africa?</span></h3>
+                <p id="paraLeftPad"> Compared to the rest of the world, <span class='africaColour'>Africa's</span> vaccinations are slowly increasing, other than
+                    Seychelles and Mauritius.
+                    <br><br>If you move the 'Rank Filter' which ranks all countries from <span class='vaxColour'>most vaccination </span> to least, 
+                    you'll find <span class='africaColour'>Sub-Saharan Africa</span> will be filtered out first.
+                    <br><br>Play around with the legend and all selections and filters to better understand vaccination rates across the world.
                 </p>
             </div>
 
@@ -121,12 +136,11 @@
             </div>
 
             <div class="pure-u-5-24">
-                <h3>The five African subregions have the five worse vaccination rates</h2>
-                <p id="paraRollout">This chart confirms that Sub-Saharan Africa and each of it's 5 subregions
-                    have the worse rates in the world.
-                    <br><br>Southeast Asia who has the 7th worse rates are already receiving 100M doses from Australia.
-                    <br><br>So why is Australia failing to ship any doses to Africa? They are struggling more than Asia,
-                    all countries need to be vaccinated to open global borders, and don't vaccinated, high-income
+                <h3><span class='africaColour'>African</span> subregions have the worst <span class='vaxColour'>vaccination rates</span></h2>
+                <p id="paraRollout">
+                    Southeast Asia who has the 7th worst rates are already receiving 100M doses from Australia.
+                    <br><br>So why is Australia failing to ship any doses to <span class='africaColour'>Sub-Saharan Africa?</span> 
+                    <br><br>All countries need to be vaccinated to truly open global borders, and don't vaccinated, high-income
                     countries have a moral obligation to help the world were they can?
             </div>
 
@@ -136,7 +150,7 @@
 
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g" style="padding-bottom: 15px;">
             <div class="pure-u-1">
                 <br><br>
                 <hr class="break1">
@@ -151,6 +165,7 @@
                 </p>
             </div>
         </div>
+    </div>
 
     <script type="text/javascript">
 
