@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 246,
+  "height": 283,
+  "title": { "text": "Pop. Vaccinated (%) per Subregion"},
+  "data": {
+      "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/subregion_barchart.csv"
+  },
+  "mark": "bar",
+  "params": [
+    {
+      "name": "Region_highlight",
+      "select": {"type": "point", "fields":["region"]}, "bind": "legend",
+      "value": "Sub-Saharan Africa"
+    }
+  ],
+  "encoding": {
+    "y": {
+        "field": "subregion",
+        "type": "nominal",
+        "scale": {"padding": 0.1},
+        "sort": "x",
+        "title": "",
+        "axis": {"labels": false, "ticks": false}
+      },
+    "x": {
+        "field": "ave_douvble_vax",
+        "type": "quantitative",
+        "title": "Population double vaccinated (%)"
+      },
+    "color": {
+        "field": "region",
+        "title": "Region",
+        "scale": {
+            "domain": [
+            "East Asia & Pacific",
+            "Europe & Central Asia",
+            "Latin America & Caribbean",
+            "Middle East & North Africa",
+            "North America",
+            "South Asia",
+            "Sub-Saharan Africa"
+            ],
+            "range": [
+              "#66c2a5",
+              "#fc8d62",
+              "#e5c494",
+              "#e78ac3",
+              "#a6d854",
+              "#ffd92f",
+              "#e31c24"
+            ]
+          },
+          "legend": {
+            "orient": "none",
+            "legendX": 110,
+            "legendY": 5,
+            "titleFontSize": 9,
+            "labelFontSize": 8.4,
+            "fillColor": "white"
+          }        
+      },
+    "opacity": {
+      "condition": {"param": "Region_highlight", "value": 1},
+      "value": 0.2
+    },
+    "tooltip": [
+      {"field": "region", "type": "nominal", "title": "Region"},
+      {"field": "subregion", "type": "nominal", "title": "Subregion"},
+      {"field": "ave_douvble_vax", "type": "nominal", "title": "Pop. double vaccinated (%)", "format": ".1f"}
+    ]
+  },
+  "config": {"font": "Open Sans", "view": {"strokeWidth":0}}
+}

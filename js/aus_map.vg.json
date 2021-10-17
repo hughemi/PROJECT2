@@ -1,0 +1,98 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Population Double Vaccinated (%) - (as at Oct 10th 2021)",
+    "width": 490,
+    "height": 260,
+    "config": {"view": {"strokeWidth":0}, "font": "Open Sans"},
+    "projection": {
+      "type": "equirectangular",
+      "center": {"expr": "center_to"},
+      "scale": {"expr": "zoom_level"}
+    },
+    "params": [
+      {
+        "name": "center_to",
+        "value": [130, -27.2],
+        "bind": {
+          "input": "select",
+          "options": [
+            [134, -27.2],
+            [144.63, -36.7],
+            [144.96, -37.82]
+          ],
+          "labels": [ "Australia", "Victoria", "Melbourne"],
+          "name": "Map Centre: "
+        }
+      },
+      {
+        "name": "zoom_level",
+        "value": 450,
+        "bind": {
+          "input": "range",
+          "min": 450,
+          "max": 20000,
+          "step": 50,
+          "name": "Zoom: "
+        }
+      }
+    ],
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/australia_map.json",
+          "format": {"type": "topojson", "feature": "ne_50m_admin_1_states_provinces"}
+        },
+        "transform": [
+          {
+            "lookup": "properties.name",
+            "from": {
+              "data": {"url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/australian_states_vax.csv"},
+              "key": "State",
+              "fields": ["VaxPercent"]
+            }
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.8},
+        "encoding": {
+          "color": {"field": "VaxPercent","type": "quantitative", "title": "Vaccinated (%)"},
+          "tooltip": [
+            {"field": "properties.name", "type": "nominal", "title": "State"},
+            {"field": "VaxPercent", "type": "quantitative", "title": "Population double vaccinated (%)", "format": ".1f"}
+          ]
+        }  
+      },
+      {
+        "data": {
+        "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/vic_lga.json",
+        "format": {"type": "topojson", "feature": "vic_lga"}
+        },
+        "transform": [
+        {
+          "lookup": "properties.ABB_NAME",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/vic_lga_vax.csv"},
+            "key": "LGA",
+            "fields": ["VaxPercent"]
+          }
+        }],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.2},
+        "encoding": {
+          "color": {
+            "field": "VaxPercent","type": "quantitative",
+            "legend": {
+              "orient": "none",
+              "legendX": 0,
+              "legendY": 30,
+              "tickCount": 6,
+              "gradientLength": 170
+          }
+          },
+          "tooltip": [
+            {"field": "properties.ABB_NAME", "type": "nominal", "title": "LGA"},
+            {"field": "VaxPercent", "type": "quantitative", "title": "Population double vaccinated (%)","format": ".1f"}
+          ]
+        }
+      }
+    ]
+  }
+  

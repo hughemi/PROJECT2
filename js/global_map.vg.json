@@ -1,0 +1,135 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Population Double Vaccinated (%) Global Map (as at Oct 10th 2021)",
+  "width": 465,
+  "config": {"view": {"strokeWidth":0}, "font": "Open Sans"},
+  "height": 230,
+  "projection": {
+    "type": "equirectangular",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
+  "params": [
+    {
+      "name": "center_to",
+      "value": [3, 5],
+      "bind": {
+        "input": "select",
+        "options": [
+          [3, 5],
+          [-103.2, 38],
+          [-60.7, -18],
+          [23, 50.7],
+          [17.3, 5.4],
+          [97.2, 32],
+          [115, 0],
+          [134, -27.2]
+        ],
+        "labels": ["Centre", "North America", "South America", "Europe", "Africa", "Asia", "Pacific", "Australia"],
+        "name": "Map Centre: "
+      }
+    },
+    {
+      "name": "zoom_level",
+      "value": 75,
+      "bind": {
+        "input": "range",
+        "min": 75,
+        "max": 1000,
+        "step": 25,
+        "name": "Zoom: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/world_map.topojson",
+        "format": {
+              "type": "topojson",
+              "feature": "ne_110m_admin_0_countries"
+            }
+      },
+      "transform": [{
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/world_map_vax.csv"
+            },
+            "key": "country",
+            "fields": ["doubleVaxPer100"]
+          }
+        },
+        {"calculate": "datum.doubleVaxPer100 / 100", "as": "Population double vaccinated (%)"}
+      ],
+      "mark": {
+        "type": "geoshape", "stroke": "white", "strokeWidth": 0.3
+        },
+      "encoding": {
+        "color": {
+          "field": "Population double vaccinated (%)",
+          "type": "quantitative",
+          "title": "Vaccinated (%)"
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+          {"field": "Population double vaccinated (%)", "type": "quantitative", "title": "Pop. double vaccinated (%)", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/australia_map.json",
+        "format": {"type": "topojson", "feature": "ne_50m_admin_1_states_provinces"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/hughemi/PROJECT2/main/data/australian_states_vax.csv"},
+            "key": "State",
+            "fields": ["VaxPercent"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1.1},
+      "encoding": {
+        "color": {
+          "field": "VaxPercent","type": "quantitative",
+          "legend": {
+            "orient": "none",
+            "legendX": 0,
+            "legendY": 90,
+            "tickCount": 5,
+            "gradientLength": 100,
+            "padding": 5,
+            "titleFontSize": 9,
+            "labelFontSize": 9
+          } 
+        },
+        "tooltip": [
+          {"field": "properties.name", "type": "nominal", "title": "State"},
+          {"field": "VaxPercent", "type": "quantitative", "title": "Population double vaccinated (%)"}
+        ]
+      }  
+    },
+    {
+      "data": {
+        "values": [
+          {"lon": 17, "lat": -50, "writing": "Less than 4% of Africa"},
+          {"lon": 17, "lat": -58, "writing": "is double vaccinated"}
+        ]
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"}
+      },
+      "layer": [
+        {
+          "mark": {"type": "text", "dy": -10},
+          "encoding": {"text": {"field": "writing", "type": "nominal"}}
+        }
+      ]
+    }
+  ]
+}
