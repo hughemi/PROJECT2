@@ -1,0 +1,96 @@
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+}
+body {
+    background-color: rgb(68, 68, 83);
+}
+#thepage{
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 30px;
+	padding-right: 10px;
+}
+
+#choroplethMap {
+	top:21px;
+	padding-bottom: 50px;
+}
+#timeSeries {
+    top:15px;
+    margin-right: 150px;
+    padding-left: 4px;
+}
+#subregionAfrica {
+    top:15px;
+	width: 100%;
+    padding-left: 5px;
+}
+#stateTS {
+    top:15px;
+	width: 100%;
+    height: 100%;
+    padding-left: 5px;
+}
+#ausMap{
+    top: 19px;
+    padding-bottom: 50px;
+}
+#ausVaxRollout{
+    top: 15px;
+}
+.vis-container {
+	width: 100%;
+	height: 100%;
+}
+
+.break1 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgb(204, 197, 197), transparent);
+    padding-top: 5px;
+	width: 100%;
+}
+
+#paraRollout{
+    padding-right: 25px;
+}
+#paraLeftPad{
+    padding-left: 30px;
+}
+#paraFirst{
+    padding-left: 30px;
+    padding-right: 40px;
+}
+#rightPad1{
+    padding-right: 35px;
+}
+#rightPad2{
+    padding-left: 30px;
+    padding-right: 51px;
+}
+#subtitle{
+    padding-left: 30px;
+    width: 800px;
+}
+.vaxColour{
+    color: #3665ae;
+}
+.africaColour{
+    color: #e31c24
+}
