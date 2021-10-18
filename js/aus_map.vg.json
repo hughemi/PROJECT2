@@ -89,7 +89,7 @@
           },
           "tooltip": [
             {"field": "properties.ABB_NAME", "type": "nominal", "title": "LGA"},
-            {"field": "VaxPercent", "type": "quantitative", "title": "Population double vaccinated (%)","format": ".1f"}
+            {"field": "VaxPercent", "type": "quantitative", "title": "Pop. double vaccinated (%)","format": ".1f"}
           ]
         }
       }
