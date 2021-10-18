@@ -54,6 +54,7 @@
     ],
     "transform": [        
         {"filter": "datum.rank <= rank"},
+        {"calculate": "datum.rank - 2", "as": "rank"},
         {"filter": "Region_selection == null || datum.region == Region_selection"}
     ],
     "encoding": {
