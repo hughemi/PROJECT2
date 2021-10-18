@@ -21,7 +21,7 @@
         "scale": {"padding": 0.1},
         "sort": "x",
         "title": "",
-        "axis": {"labels": false, "ticks": false, "title": true}
+        "axis": {"labels": false, "ticks": false, "title": "Subregion}
       },
     "x": {
         "field": "ave_douvble_vax",
