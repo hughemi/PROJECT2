@@ -21,7 +21,7 @@
         "scale": {"padding": 0.1},
         "sort": "x",
         "title": "",
-        "axis": {"labels": false, "ticks": false}
+        "axis": {"labels": false, "ticks": false, "title": true}
       },
     "x": {
         "field": "ave_douvble_vax",
