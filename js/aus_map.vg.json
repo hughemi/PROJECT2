@@ -57,7 +57,7 @@
           "color": {"field": "VaxPercent","type": "quantitative", "title": "Vaccinated (%)"},
           "tooltip": [
             {"field": "properties.name", "type": "nominal", "title": "State"},
-            {"field": "VaxPercent", "type": "quantitative", "title": "Population double vaccinated (%)", "format": ".1f"}
+            {"field": "VaxPercent", "type": "quantitative", "title": "Pop. double vaccinated (%)", "format": ".1f"}
           ]
         }  
       },
